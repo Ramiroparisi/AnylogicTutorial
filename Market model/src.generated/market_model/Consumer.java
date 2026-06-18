@@ -82,10 +82,19 @@ public void set_ContactRate(double _value) { throw new UnsupportedOperationExcep
 public double AdoptionFraction;
 protected void onChange_AdoptionFraction() { throw new UnsupportedOperationException(); }
 public void set_AdoptionFraction(double _value) { throw new UnsupportedOperationException(); }
+@AnyLogicCustomProposalType(AnyLogicCustomProposalType.Label.MONTH)
+public double DiscardTime;
+protected void onChange_DiscardTime() { throw new UnsupportedOperationException(); }
+public void set_DiscardTime(double _value) { throw new UnsupportedOperationException(); }
+public void set_DiscardTime(double _value,TimeUnits _units) { throw new UnsupportedOperationException(); }
+public double DiscardTime(TimeUnits _units) { throw new UnsupportedOperationException(); }
 public LinkToAgentCollection<Agent, Agent> connections;
 public final market_model.Main main = null;
 public TransitionRate Ad;
-public TransitionTimeout transition;
+public TransitionTimeout Purchase;
+public TransitionRate Contact;
+public TransitionTimeout Discard;
+public TransitionMessage WOM;
 @AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
 public static final Scale scale = null;
 protected ShapeGroup person;
@@ -101,12 +110,12 @@ public Consumer() { throw new UnsupportedOperationException(); }
 /**
  * Simple constructor. Please add created agent to some population by calling goToPopulation() function.
  */
-public Consumer(double AdEffectiveness,double ContactRate,double AdoptionFraction) { throw new UnsupportedOperationException(); }
+public Consumer(double AdEffectiveness,double ContactRate,double AdoptionFraction,double DiscardTime) { throw new UnsupportedOperationException(); }
 protected ShapeTopLevelPresentationGroup presentation;
 protected ShapeModelElementsGroup icon;
 public Statechart<statechart_state> statechart;
 public enum statechart_state implements IStatechartState<Consumer, statechart_state> {
-PotentialUser,User;
+PotentialUser,WantsToBuy,User;
 public Collection<statechart_state> getSimpleStatesDeep() { throw new UnsupportedOperationException(); }
 public Set<statechart_state> getStatesInside() { throw new UnsupportedOperationException(); }
 public Set<statechart_state> getFullState() { throw new UnsupportedOperationException(); }
@@ -114,6 +123,8 @@ public Statechart<statechart_state> getStatechart(Consumer agent) { throw new Un
 }
 @AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
 public static final statechart_state PotentialUser = null;
+@AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
+public static final statechart_state WantsToBuy = null;
 @AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
 public static final statechart_state User = null;
 public Main get_Main() { throw new UnsupportedOperationException(); }

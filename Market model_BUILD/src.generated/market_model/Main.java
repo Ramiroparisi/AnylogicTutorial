@@ -200,6 +200,10 @@ public class Main extends Agent
     public int NUser() {
       return _consumers_NUser_xjal();
     }
+
+    public int NWantToBuy() {
+      return _consumers_NWantToBuy_xjal();
+    }
   }
   
   @AnyLogicCustomProposalType(value = AnyLogicCustomProposalType.Label.POPULATION, customText = "Consumer")
@@ -243,14 +247,20 @@ public class Main extends Agent
    * This method uses given parameter values to setup created embedded object<br>
    * Index of this new embedded object instance can be obtained through calling <code>consumers.size()</code> method <strong>before</strong> this method is called
    * @param AdEffectiveness
+   * @param ContactRate
+   * @param AdoptionFraction
+   * @param DiscardTime
    * @return newly created embedded object
    */
-  public Consumer add_consumers( double AdEffectiveness ) {
+  public Consumer add_consumers( double AdEffectiveness, double ContactRate, double AdoptionFraction, double DiscardTime ) {
     int index = consumers.size();
     Consumer _result_xjal = instantiate_consumers_xjal( index );
     // Setup parameters
     _result_xjal.markParametersAreSet();
     _result_xjal.AdEffectiveness = AdEffectiveness;
+    _result_xjal.ContactRate = ContactRate;
+    _result_xjal.AdoptionFraction = AdoptionFraction;
+    _result_xjal.DiscardTime = DiscardTime;
     // Finish embedded object creation
     consumers.callCreate( _result_xjal, index );
     _result_xjal.start();
@@ -293,6 +303,9 @@ public class Main extends Agent
     self.AdEffectiveness = 
 0.01 
 ;
+    self.ContactRate = self._ContactRate_DefaultValue_xjal();
+    self.AdoptionFraction = self._AdoptionFraction_DefaultValue_xjal();
+    self.DiscardTime = self._DiscardTime_DefaultValue_xjal();
   }
 
   /**
@@ -336,6 +349,21 @@ agent.inState(Consumer.User) ;
     }
     return _value;
   }
+  /**
+   * <i>This method should not be called by user</i>
+   */
+  private int _consumers_NWantToBuy_xjal() {
+    int _value = 0;
+    for ( Consumer agent : consumers ) {
+      Consumer item = agent;
+      boolean _t = 
+agent.inState(Consumer.WantsToBuy) ;
+      if ( _t ) {
+        _value++;
+      }
+    }
+    return _value;
+  }
 private double _datasetUpdateTime_xjal() {
 	return time();
 }
@@ -368,6 +396,23 @@ consumers.NUser()
    */
   @AnyLogicInternalCodegenAPI
   private double __chart_expression1_dataSet_xjal_YValue(  ) {
+    return 
+consumers.NWantToBuy() 
+;
+  }
+
+  /**
+   * <i>This method should not be called by user</i>
+   */
+  @AnyLogicInternalCodegenAPI
+  private double __chart_expression2_dataSet_xjal_XValue(  ) {
+	return _datasetUpdateTime_xjal();
+  }
+  /**
+   * <i>This method should not be called by user</i>
+   */
+  @AnyLogicInternalCodegenAPI
+  private double __chart_expression2_dataSet_xjal_YValue(  ) {
     return 
 consumers.NPotential() 
 ;
@@ -438,7 +483,7 @@ consumers.NPotential()
   @AnyLogicInternalCodegenAPI
   private void _createPersistentElementsAP0_xjal() {
     {
-    List<DataSet> _items = new ArrayList<DataSet>( 2 );
+    List<DataSet> _items = new ArrayList<DataSet>( 3 );
     _items.add( new DataSet(365, new DataUpdater_xjal() {
     double _lastUpdateX = Double.NaN;
     @Override
@@ -457,11 +502,22 @@ consumers.NPotential()
       _lastUpdateX = _datasetUpdateTime_xjal();
     }
   } ) ); 
-    List<String> _titles = new ArrayList<>( 2 );
+    _items.add( new DataSet(365, new DataUpdater_xjal() {
+    double _lastUpdateX = Double.NaN;
+    @Override
+    public void update( BasicDataSet _d ) {
+      if ( _datasetUpdateTime_xjal() == _lastUpdateX ) { return; }
+      _d.add( __chart_expression2_dataSet_xjal_XValue(  ), __chart_expression2_dataSet_xjal_YValue(  ) );
+      _lastUpdateX = _datasetUpdateTime_xjal();
+    }
+  } ) ); 
+    List<String> _titles = new ArrayList<>( 3 );
     _titles.add( "Users" );
+    _titles.add( "Want To Buy" );
     _titles.add( "Potential Users" );
-    List<Color> _colors = new ArrayList<>( 2 );
+    List<Color> _colors = new ArrayList<>( 3 );
     _colors.add( yellowGreen );
+    _colors.add( gold );
     _colors.add( lavender );
     chart = new TimeStackChart(
 Main.this, true, 220.0, 120.0,

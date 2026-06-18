@@ -110,10 +110,158 @@ double  AdEffectiveness;
   }
 
 
+  public 
+double  ContactRate;
+
+  /**
+   * Returns default value for parameter <code>ContactRate</code>.
+   * <i>This method should not be called by user</i>
+   */
+  @AnyLogicInternalCodegenAPI
+  public double _ContactRate_DefaultValue_xjal() {
+    final Consumer self = this;
+    return 
+1 
+;
+  }
+
+  public void set_ContactRate( double value ) {
+    if (value == this.ContactRate) {
+      return;
+    }
+    double _oldValue_xjal = this.ContactRate;
+    this.ContactRate = value;
+    onChange_ContactRate_xjal( _oldValue_xjal );
+    onChange();
+  }
+
+  /**
+   * Calls "On change" action for parameter ContactRate.<br>
+   * Note that 'oldValue' in that action will be unavailable if this method is called by user
+   * (current parameter value will be passed as 'oldValue').<br>
+   * Please call <code>set_ContactRate()</code> method instead.
+   */
+  protected void onChange_ContactRate() {
+    onChange_ContactRate_xjal( ContactRate );
+  }
+
+  @AnyLogicInternalCodegenAPI
+  protected void onChange_ContactRate_xjal( double oldValue ) {  
+  }
+
+
+  public 
+double  AdoptionFraction;
+
+  /**
+   * Returns default value for parameter <code>AdoptionFraction</code>.
+   * <i>This method should not be called by user</i>
+   */
+  @AnyLogicInternalCodegenAPI
+  public double _AdoptionFraction_DefaultValue_xjal() {
+    final Consumer self = this;
+    return 
+0.01 
+;
+  }
+
+  public void set_AdoptionFraction( double value ) {
+    if (value == this.AdoptionFraction) {
+      return;
+    }
+    double _oldValue_xjal = this.AdoptionFraction;
+    this.AdoptionFraction = value;
+    onChange_AdoptionFraction_xjal( _oldValue_xjal );
+    onChange();
+  }
+
+  /**
+   * Calls "On change" action for parameter AdoptionFraction.<br>
+   * Note that 'oldValue' in that action will be unavailable if this method is called by user
+   * (current parameter value will be passed as 'oldValue').<br>
+   * Please call <code>set_AdoptionFraction()</code> method instead.
+   */
+  protected void onChange_AdoptionFraction() {
+    onChange_AdoptionFraction_xjal( AdoptionFraction );
+  }
+
+  @AnyLogicInternalCodegenAPI
+  protected void onChange_AdoptionFraction_xjal( double oldValue ) {  
+  }
+
+
+  @AnyLogicCustomProposalType(AnyLogicCustomProposalType.Label.MONTH)
+  public 
+double  DiscardTime;
+
+  /**
+   * Returns default value for parameter <code>DiscardTime</code>.
+   * <i>This method should not be called by user</i>
+   */
+  @AnyLogicInternalCodegenAPI
+  public double _DiscardTime_DefaultValue_xjal() {
+    final Consumer self = this;
+    return 
+6 
+;
+  }
+
+  public double DiscardTime( TimeUnits units ) {
+    return MONTH.convertTo( this.DiscardTime, units );
+  }
+
+  public void set_DiscardTime( double value, TimeUnits units ) {
+    set_DiscardTime( units.convertTo( value, MONTH ) );
+  }
+
+  public void set_DiscardTime( double value ) {
+    if (value == this.DiscardTime) {
+      return;
+    }
+    double _oldValue_xjal = this.DiscardTime;
+    this.DiscardTime = value;
+    onChange_DiscardTime_xjal( _oldValue_xjal );
+    onChange();
+  }
+
+  /**
+   * Calls "On change" action for parameter DiscardTime.<br>
+   * Note that 'oldValue' in that action will be unavailable if this method is called by user
+   * (current parameter value will be passed as 'oldValue').<br>
+   * Please call <code>set_DiscardTime()</code> method instead.
+   */
+  protected void onChange_DiscardTime() {
+    onChange_DiscardTime_xjal( DiscardTime );
+  }
+
+  @AnyLogicInternalCodegenAPI
+  protected void onChange_DiscardTime_xjal( double oldValue ) {  
+  }
+
+  
+  /**
+   * Internal method. Returns the units used in design-time for setting the code of this parameter (these units may be e.g. used for adaptation of dynamic parameter arguments)
+   */
+  @AnyLogicInternalCodegenAPI
+  public TimeUnits getUnitsForCodeOf_DiscardTime() {
+    return MONTH;
+  }
+  
+  /**
+   * Internal method. Returns the units of this parameter.
+   */
+  @AnyLogicInternalCodegenAPI
+  public TimeUnits getUnitsOf_DiscardTime() {
+    return MONTH;
+  }
+
   @Override
   public void setParametersToDefaultValues() {
     super.setParametersToDefaultValues();
     AdEffectiveness = _AdEffectiveness_DefaultValue_xjal();
+    ContactRate = _ContactRate_DefaultValue_xjal();
+    AdoptionFraction = _AdoptionFraction_DefaultValue_xjal();
+    DiscardTime = _DiscardTime_DefaultValue_xjal();
   }
 
   @Override
@@ -126,6 +274,27 @@ double  AdEffectiveness;
         AdEffectiveness = ((Number) _value_xjal).doubleValue();
       }
       return true;
+    case "ContactRate":
+      if ( _callOnChange_xjal ) {
+        set_ContactRate( ((Number) _value_xjal).doubleValue() );
+      } else {
+        ContactRate = ((Number) _value_xjal).doubleValue();
+      }
+      return true;
+    case "AdoptionFraction":
+      if ( _callOnChange_xjal ) {
+        set_AdoptionFraction( ((Number) _value_xjal).doubleValue() );
+      } else {
+        AdoptionFraction = ((Number) _value_xjal).doubleValue();
+      }
+      return true;
+    case "DiscardTime":
+      if ( _callOnChange_xjal ) {
+        set_DiscardTime( ((Number) _value_xjal).doubleValue() );
+      } else {
+        DiscardTime = ((Number) _value_xjal).doubleValue();
+      }
+      return true;
     default:
       return super.setParameter( _name_xjal, _value_xjal, _callOnChange_xjal );
     }
@@ -136,6 +305,9 @@ double  AdEffectiveness;
     Object _result_xjal;
     switch ( _name_xjal ) {
     case "AdEffectiveness": _result_xjal = AdEffectiveness; break;
+    case "ContactRate": _result_xjal = ContactRate; break;
+    case "AdoptionFraction": _result_xjal = AdoptionFraction; break;
+    case "DiscardTime": _result_xjal = DiscardTime; break;
     default: _result_xjal = super.getParameter( _name_xjal ); break;
     }
     return (T) _result_xjal;
@@ -150,6 +322,9 @@ double  AdEffectiveness;
     if (result == null) {
       List<String> list = new ArrayList<>( Arrays.asList( super.getParameterNames() ) );
       list.add( "AdEffectiveness" );
+      list.add( "ContactRate" );
+      list.add( "AdoptionFraction" );
+      list.add( "DiscardTime" );
       result = list.toArray( new String[ list.size() ] );
       _parameterNames_xjal = result;
     }
@@ -181,7 +356,7 @@ double  AdEffectiveness;
 
 
   // Statecharts
-  public Statechart<statechart_state> statechart = new Statechart<>( this, (short)1 );
+  public Statechart<statechart_state> statechart = new Statechart<>( this, (short)2 );
 
   @Override
   @AnyLogicInternalCodegenAPI
@@ -211,6 +386,7 @@ double  AdEffectiveness;
    
   public enum statechart_state implements IStatechartState<Consumer, statechart_state> {
     PotentialUser,
+    WantsToBuy,
     User;
 
     @AnyLogicInternalCodegenAPI
@@ -260,6 +436,8 @@ double  AdEffectiveness;
   @AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
   public static final statechart_state PotentialUser = statechart_state.PotentialUser;
   @AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
+  public static final statechart_state WantsToBuy = statechart_state.WantsToBuy;
+  @AnyLogicCustomProposalPriority(type = AnyLogicCustomProposalPriority.Type.STATIC_ELEMENT)
   public static final statechart_state User = statechart_state.User;
 
 
@@ -274,6 +452,16 @@ double  AdEffectiveness;
 shapeBody.setFillColor(lavender) 
 ;}
         Ad.start();
+        WOM.start();
+        return;
+      case WantsToBuy:
+  	    logToDBEnterState(statechart, self);
+        // (Simple state (not composite))
+        statechart.setActiveState_xjal( WantsToBuy );
+        {
+shapeBody.setFillColor( gold ); 
+;}
+        Purchase.start();
         return;
       case User:
   	    logToDBEnterState(statechart, self);
@@ -282,6 +470,8 @@ shapeBody.setFillColor(lavender)
         {
 shapeBody.setFillColor( yellowGreen ); 
 ;}
+        Contact.start();
+        Discard.start();
         return;
       default:
         return;
@@ -296,11 +486,20 @@ shapeBody.setFillColor( yellowGreen );
   	    logToDB(statechart, _t, self);
       // (Simple state (not composite))
         if ( !_source || _t != Ad) Ad.cancel();
+        if ( !_source || _t != WOM) WOM.cancel();
+        return;
+      case WantsToBuy: 
+  	    logToDBExitState(statechart, self);
+  	    logToDB(statechart, _t, self);
+      // (Simple state (not composite))
+        if ( !_source || _t != Purchase) Purchase.cancel();
         return;
       case User: 
   	    logToDBExitState(statechart, self);
   	    logToDB(statechart, _t, self);
       // (Simple state (not composite))
+        if ( !_source || _t != Contact) Contact.cancel();
+        if ( !_source || _t != Discard) Discard.cancel();
         return;
       default:
         return;
@@ -316,14 +515,70 @@ shapeBody.setFillColor( yellowGreen );
 		}
 	}
   
+  public TransitionTimeout Purchase = new TransitionTimeout( this );
+  public TransitionTimeout Discard = new TransitionTimeout( this );
+
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public String getNameOf( TransitionTimeout _t ) {
+    if ( _t == Purchase ) return "Purchase";
+    if ( _t == Discard ) return "Discard";
+    return super.getNameOf( _t );
+  }
+
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public Statechart getStatechartOf( TransitionTimeout _t ) { 
+    if ( _t == Purchase ) return statechart;
+    if ( _t == Discard ) return statechart;
+    return super.getStatechartOf( _t );
+  }
+
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public void executeActionOf( TransitionTimeout self ) {
+    if ( self == Purchase ) {
+      exitState( WantsToBuy, self, true );
+          enterState( User, true );
+      return;
+    }
+    if ( self == Discard ) {
+      exitState( User, self, true );
+          enterState( WantsToBuy, true );
+      return;
+    }
+    super.executeActionOf( self );
+  }
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public double evaluateTimeoutOf( TransitionTimeout _t ) {
+    double _value;
+    if ( _t == Purchase ) {
+      _value = 
+2 
+;
+      _value = toModelTime( _value, DAY );
+      return _value;
+    }
+    if ( _t == Discard ) {
+      _value = 
+DiscardTime 
+;
+      _value = toModelTime( _value, MONTH );
+      return _value;
+    }
+    return super.evaluateTimeoutOf( _t );
+  }
 
 
   public TransitionRate Ad = new TransitionRate( this );
+  public TransitionRate Contact = new TransitionRate( this );
 
   @Override
   @AnyLogicInternalCodegenAPI
   public String getNameOf( TransitionRate _t ) {
     if ( _t == Ad ) return "Ad";
+    if ( _t == Contact ) return "Contact";
     return super.getNameOf( _t );
   }
 
@@ -331,6 +586,7 @@ shapeBody.setFillColor( yellowGreen );
   @AnyLogicInternalCodegenAPI
   public Statechart getStatechartOf( TransitionRate _t ) { 
     if ( _t == Ad ) return statechart;
+    if ( _t == Contact ) return statechart;
     return super.getStatechartOf( _t );
   }
 
@@ -339,7 +595,14 @@ shapeBody.setFillColor( yellowGreen );
   public void executeActionOf( TransitionRate self ) {
     if ( self == Ad ) {
       exitState( PotentialUser, self, true );
-          enterState( User, true );
+          enterState( WantsToBuy, true );
+      return;
+    }
+    if ( self == Contact ) {
+      {
+sendToRandom( "Buy" ) 
+;}
+      Contact.start();
       return;
     }
     super.executeActionOf( self );
@@ -355,10 +618,67 @@ AdEffectiveness
       _value = toModelRate( _value, PER_DAY );
       return _value;
     }
+    if ( _t == Contact ) {
+      _value = 
+ContactRate 
+;
+      _value = toModelRate( _value, PER_DAY );
+      return _value;
+    }
     return super.evaluateRateOf( _t );
   }
 
+  public TransitionMessage WOM = new TransitionMessage( this );
 
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public String getNameOf( TransitionMessage _t ) {
+    if ( _t == WOM ) return "WOM";
+    return super.getNameOf( _t );
+  }
+
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public Statechart getStatechartOf( TransitionMessage _t ) { 
+    if ( _t == WOM ) return statechart;
+    return super.getStatechartOf( _t );
+  }
+
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public boolean testGuardOf( TransitionMessage _t ) {
+    if ( _t == WOM ) return 
+randomTrue(AdoptionFraction) 
+;
+    return super.testGuardOf(  _t );
+  }
+
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public void executeActionOf( TransitionMessage self, Object _msg ) {
+    if ( self == WOM ) {
+      exitState( PotentialUser, self, true );
+          enterState( WantsToBuy, true );
+      return;
+    }
+    super.executeActionOf( self, _msg );
+  }
+  @Override
+  @AnyLogicInternalCodegenAPI
+  public boolean testMessageOf( TransitionMessage _t, Object _msg ) {
+    if ( _t == WOM ) {
+      if ( !(_msg instanceof String) )
+        return false;
+      
+String 
+msg = (String) _msg;
+      Object _g = 
+"Buy" 
+;
+      return msg.equals( _g );
+    }
+    return super.testMessageOf( _t, _msg );
+  }
 private double _datasetUpdateTime_xjal() {
 	return time();
 }
@@ -507,9 +827,12 @@ true,-2.0, -7.0,
   /**
    * Simple constructor. Please add created agent to some population by calling goToPopulation() function.
    */
-  public Consumer( double AdEffectiveness ) {
+  public Consumer( double AdEffectiveness, double ContactRate, double AdoptionFraction, double DiscardTime ) {
     markParametersAreSet();
     this.AdEffectiveness = AdEffectiveness;
+    this.ContactRate = ContactRate;
+    this.AdoptionFraction = AdoptionFraction;
+    this.DiscardTime = DiscardTime;
   }
 
   @Override

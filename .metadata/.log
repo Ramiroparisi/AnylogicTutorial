@@ -1,0 +1,336 @@
+!SESSION 2026-06-16 19:12:27.600 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.anylogic.ui 1 0 2026-06-16 19:12:36.419
+!MESSAGE Java VM version: 17.0.9+9, AnyLogic version: 8.9.8.202602271015
+!LOCATION com.anylogic.application.AnyLogicApplication.start(SourceFile:230)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-16 19:12:36.423
+!MESSAGE Starting AnyLogic application, Edition: Personal
+!LOCATION com.anylogic.application.AnyLogicApplication.start(SourceFile:251)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-16 22:12:36.823
+!MESSAGE Instance location: file:/C:/Users/Usuario/.AnyLogicPLE/Workspace8.8/
+!LOCATION com.anylogic.application.AnyLogicApplication.m(SourceFile:173)
+
+!ENTRY org.eclipse.ui 2 0 2026-06-16 22:12:38.237
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-16 22:12:38.239
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.commit.DiffEditorQuickOutlineCommand'
+
+!ENTRY org.eclipse.ui 2 0 2026-06-16 22:12:39.310
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-16 22:12:39.310
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.ImportChangedProjectsCommandId'
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-16 22:12:39.311
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.RepositoriesViewImportProjects'
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-16 22:12:39.311
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.team.Synchronize'
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-16 22:12:39.311
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.commit.UnifiedDiffCommand'
+
+!ENTRY com.anylogic.core8 1 0 2026-06-16 22:12:42.493
+!MESSAGE Run database server: [C:\Program Files\AnyLogic 8.9 Personal Learning Edition\jre/bin/java, -cp, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.database_8.9.8.202602271015.jar;C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.database8_8.9.8.202602271015/database8_plugin.jar;C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.third_party_libraries_8.9.8.202602271015/lib/hsqldb-2.7.1.jar, com.anylogic.database.AnyLogicDatabaseServerProcess, AnyLogic.IncomingDataPort=7880|server.remote_open=true|server.port=9001]
+!LOCATION com.anylogic.database.AnyLogicDatabaseServerProcessBuilder.exec(SourceFile:48)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-16 22:12:43.226
+!MESSAGE Java home: C:\Program Files\AnyLogic 8.9 Personal Learning Edition\jre
+!LOCATION com.anylogic.application.AnyLogicWorkbenchAdvisor.e(SourceFile:603)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-16 22:12:46.670
+!MESSAGE Load libraries: [C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/Core/Core.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/LevelSystem/LevelSystem.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/NavigationMesh/NavigationMesh.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/MarkupDescriptors/MarkupDescriptors.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/RackSystemModule/RackSystemModule.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.process_modeling_library_8.9.8.202602271015/lib/ProcessModelingLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.material_handling_library_8.9.8.202602271015/lib/MaterialHandlingLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.pedestrian_library_8.9.8.202602271015/lib/PedestrianLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.rail_library_8.9.8.202602271015/lib/RailLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.road_traffic_library_8.9.8.202602271015/lib/RoadTrafficLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.fluid_library_8.9.8.202602271015/lib/FluidLibrary.jar]
+!LOCATION com.anylogic.application.AnyLogicWorkbenchWindowAdvisor.restoreWorkspaceLibraries(SourceFile:1617)
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-06-16 22:13:17.652
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Usuario'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-06-16 22:13:56.295
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.anylogic.application.AnyLogicApplication$1
+!SESSION 2026-06-17 17:19:15.249 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.anylogic.ui 1 0 2026-06-17 17:19:22.374
+!MESSAGE Java VM version: 17.0.9+9, AnyLogic version: 8.9.8.202602271015
+!LOCATION com.anylogic.application.AnyLogicApplication.start(SourceFile:230)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-17 17:19:22.379
+!MESSAGE Starting AnyLogic application, Edition: Personal
+!LOCATION com.anylogic.application.AnyLogicApplication.start(SourceFile:251)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-17 20:19:22.829
+!MESSAGE Instance location: file:/C:/Users/Usuario/.AnyLogicPLE/Workspace8.8/
+!LOCATION com.anylogic.application.AnyLogicApplication.m(SourceFile:173)
+
+!ENTRY org.eclipse.ui 2 0 2026-06-17 20:19:23.538
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-17 20:19:23.538
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.commit.DiffEditorQuickOutlineCommand'
+
+!ENTRY org.eclipse.ui 2 0 2026-06-17 20:19:24.061
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-17 20:19:24.061
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.ImportChangedProjectsCommandId'
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-17 20:19:24.061
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.RepositoriesViewImportProjects'
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-17 20:19:24.061
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.team.Synchronize'
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-17 20:19:24.061
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.egit.ui', id='org.eclipse.egit.ui.commit.UnifiedDiffCommand'
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:19:25.419
+!MESSAGE Run database server: [C:\Program Files\AnyLogic 8.9 Personal Learning Edition\jre/bin/java, -cp, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.database_8.9.8.202602271015.jar;C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.database8_8.9.8.202602271015/database8_plugin.jar;C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.third_party_libraries_8.9.8.202602271015/lib/hsqldb-2.7.1.jar, com.anylogic.database.AnyLogicDatabaseServerProcess, AnyLogic.IncomingDataPort=7880|server.remote_open=true|server.port=9001]
+!LOCATION com.anylogic.database.AnyLogicDatabaseServerProcessBuilder.exec(SourceFile:48)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-17 20:19:25.847
+!MESSAGE Java home: C:\Program Files\AnyLogic 8.9 Personal Learning Edition\jre
+!LOCATION com.anylogic.application.AnyLogicWorkbenchAdvisor.e(SourceFile:603)
+
+!ENTRY com.anylogic.ui 1 0 2026-06-17 20:19:26.693
+!MESSAGE Load libraries: [C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/Core/Core.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/LevelSystem/LevelSystem.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/NavigationMesh/NavigationMesh.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/MarkupDescriptors/MarkupDescriptors.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.libraries.modules_8.9.8.202602271015/lib/RackSystemModule/RackSystemModule.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.process_modeling_library_8.9.8.202602271015/lib/ProcessModelingLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.material_handling_library_8.9.8.202602271015/lib/MaterialHandlingLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.pedestrian_library_8.9.8.202602271015/lib/PedestrianLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.rail_library_8.9.8.202602271015/lib/RailLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.road_traffic_library_8.9.8.202602271015/lib/RoadTrafficLibrary.jar, C:/Program Files/AnyLogic 8.9 Personal Learning Edition/plugins/com.anylogic.fluid_library_8.9.8.202602271015/lib/FluidLibrary.jar]
+!LOCATION com.anylogic.application.AnyLogicWorkbenchWindowAdvisor.restoreWorkspaceLibraries(SourceFile:1617)
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-06-17 20:19:39.276
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Usuario'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:21:30.645
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:27:50.374
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:28.501
+!MESSAGE com.anylogic.objectmodel.elements.graphical.EmbeddedObject.getEoInspectionWindow()
+!LOCATION com.anylogic.codefield.CodeProcessingUtils.i(SourceFile:715)
+!STACK 0
+java.lang.NoSuchMethodException: com.anylogic.objectmodel.elements.graphical.EmbeddedObject.getEoInspectionWindow()
+	at java.base/java.lang.Class.getMethod(Class.java:2227)
+	at com.anylogic.codefield.CodeProcessingUtils.m(SourceFile:751)
+	at com.anylogic.codefield.CodeProcessingUtils.i(SourceFile:701)
+	at com.anylogic.codefield.CodeProcessingUtils.m(SourceFile:661)
+	at com.anylogic.codefield.CodeProcessingUtils.m(SourceFile:529)
+	at com.anylogic.codefield.CodeProcessingUtils.visitCodeFieldsDeep(SourceFile:503)
+	at com.anylogic.actions.refactor.AbstractCodeProcessingAction.m(SourceFile:142)
+	at com.anylogic.actions.refactor.AbstractCodeProcessingAction.m(SourceFile:163)
+	at com.anylogic.actions.refactor.AbstractCodeProcessingAction.m(SourceFile:142)
+	at com.anylogic.actions.refactor.AbstractCodeProcessingAction.isEnabledFor(SourceFile:252)
+	at com.anylogic.actions.edit.CodeFormatAction.<init>(SourceFile:26)
+	at com.anylogic.graphicaleditor.helpers.ContextMenuHelper.addSelectionActions(SourceFile:172)
+	at com.anylogic.graphicaleditor.FigureCanvasViewer.menuAboutToShow(SourceFile:1065)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5140)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4772)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4095)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3636)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.anylogic.application.AnyLogicApplication.start(SourceFile:286)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY com.anylogic.core8 2 0 2026-06-17 20:32:29.838
+!MESSAGE something disposed: control: Composite {*Disposed*} [layout=null], flowToolbar: Shell {} [layout=GridLayout {marginLeft=21}], scrolledComposite: ScrolledComposite {*Disposed*} [layout=null]
+!LOCATION com.anylogic.properties.widget.base.list.ListWidget.i(SourceFile:267)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:32.755
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:32.834
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:32.966
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:32.974
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:33.234
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:33.242
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:32:33.478
+!MESSAGE AOC is a parent of LevelElement (class com.anylogic.objectmodel.elements.graphical.EmbeddedObjectPresentation): consumers_presentation, its parent: Main - Agent Type
+!LOCATION com.anylogic.objectmodel.elements.graphical.markup.AbstractLevelElement.getLevel(SourceFile:79)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:36:03.017
+!MESSAGE Property "Child removed" is not valid for element type class com.anylogic.objectmodel.elements.graphical.shapes.Group
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:36:37.159
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:36:37.654
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:36:37.667
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en0np93b" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:44:31.960
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:44:32.376
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:44:32.379
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en0oy79j" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:47:40.007
+!MESSAGE Property "Statistics Added" is not valid for element type class com.anylogic.objectmodel.elements.graphical.EmbeddedObject
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:50:07.284
+!MESSAGE Property "Statistics Added" is not valid for element type class com.anylogic.objectmodel.elements.graphical.EmbeddedObject
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-17 20:53:49.915
+!MESSAGE Property "Dataset Expression Added" is not valid for element type class com.anylogic.objectmodel.elements.graphical.analysis.charts.TimeStackChart
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:56:01.187
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:56:01.576
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:56:01.578
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en0l9glj" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:56:21.083
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:56:21.416
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-17 20:56:21.419
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en0l9glj" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 19:25:50.815
+!MESSAGE Property "Remove Child Element" is not valid for element type class com.anylogic.objectmodel.elements.graphical.statechart.State
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 19:25:50.828
+!MESSAGE Property "Add Child Element" is not valid for element type class com.anylogic.objectmodel.elements.graphical.statechart.State
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 19:30:38.893
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 19:30:39.201
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 19:30:39.205
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en0pt8hz" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 21:00:42.352
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 21:00:43.056
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 21:00:43.067
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en0o68nb" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 21:03:45.116
+!MESSAGE Property "Remove Child Element" is not valid for element type class com.anylogic.objectmodel.elements.graphical.statechart.State
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 21:03:45.116
+!MESSAGE Property "Add Child Element" is not valid for element type class com.anylogic.objectmodel.elements.graphical.statechart.State
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 21:11:45.272
+!MESSAGE Property "Statistics Added" is not valid for element type class com.anylogic.objectmodel.elements.graphical.EmbeddedObject
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 21:13:47.714
+!MESSAGE Property "Dataset Expression Added" is not valid for element type class com.anylogic.objectmodel.elements.graphical.analysis.charts.TimeStackChart
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 4 0 2026-06-18 21:14:43.060
+!MESSAGE Property "Dataset Expression Inserted" is not valid for element type class com.anylogic.objectmodel.elements.graphical.analysis.charts.TimeStackChart
+!LOCATION com.anylogic.objectmodel.support.propertysource.AbstractModelElementPropertySource.setPropertyValue(SourceFile:102)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 21:15:28.024
+!MESSAGE Generate build sources "Market model"
+!LOCATION com.anylogic.actions.model.BuildJob.m(SourceFile:214)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 21:15:28.318
+!MESSAGE Start Simulation experiment
+!LOCATION com.anylogic.actions.model.RunExperimentAction.run(SourceFile:175)
+
+!ENTRY com.anylogic.core8 1 0 2026-06-18 21:15:28.320
+!MESSAGE Run model:  -Xmx512m -DlanguageId_xjal="en011a7gn" -DbuiltInTileCachePath_xjal="C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles" -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal="C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe" -DstandaloneBrowserCommandArguments_xjal="--app=$1 --test-type" -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal="--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData" -DuseProxy_xjal=false
+!LOCATION com.anylogic.ui.dc.m(SourceFile:236)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.anylogic.ms.MS"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="market_model.Simulation 1c523bb"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Market model_BUILD"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" -Xmx512m -DlanguageId_xjal=&quot;en011a7gn&quot; -DbuiltInTileCachePath_xjal=&quot;C:\Program Files\AnyLogic 8.9 Personal Learning Edition\plugins\com.anylogic.gis_8.9.8.202602271015\tiles&quot; -DflowchartCountersVisible_xjal=true -DflowchartPortStateAnimated_xjal=true -DenableWarnings_xjal=true -DenableObject3DLod_xjal=true -Denable2DVisibilityCheck_xjal=true -DstandaloneBrowserPath_xjal=&quot;C:/Program Files/AnyLogic 8.9 Personal Learning Edition/chromium/chromium-win64/chrome.exe&quot; -DstandaloneBrowserCommandArguments_xjal=&quot;--app=$1 --test-type&quot; -DanylogicIncomingPort_xjal=7880 -DbrowserUserDataPath_xjal=&quot;--user-data-dir=C:\Users\Usuario\.AnyLogicPLE\Workspace8.8\chromium\userData&quot; -DuseProxy_xjal=false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\Usuario\Models\Market model\"/>
+</launchConfiguration>

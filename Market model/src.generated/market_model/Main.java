@@ -98,15 +98,17 @@ public Consumer add_consumers() { throw new UnsupportedOperationException(); }
  * @param AdEffectiveness<br>
  * @param ContactRate<br>
  * @param AdoptionFraction<br>
+ * @param DiscardTime<br>
  * Index of this new embedded object instance can be obtained through calling <code>consumers.size()</code> method <strong>before</strong> this method is called<br>
  * @return newly created embedded object
  */
-public Consumer add_consumers(double AdEffectiveness,double ContactRate,double AdoptionFraction) { throw new UnsupportedOperationException(); }
+public Consumer add_consumers(double AdEffectiveness,double ContactRate,double AdoptionFraction,double DiscardTime) { throw new UnsupportedOperationException(); }
 public abstract class _consumers_Population extends AgentArrayList<Consumer> {
 
 private static final long serialVersionUID = 1L;
 public abstract int NPotential();
 public abstract int NUser();
+public abstract int NWantToBuy();
 _consumers_Population() { super(null); }
 }
 public LinkToAgentCollection<Agent, Agent> connections;
@@ -130,4 +132,11 @@ public ViewArea _origin_VA;
  
 /*INJ:Additional Code*/
 
+/*INJ:COMPLETION_STUB_INJECTION_START*/
+//  (DataSequenceExpression) :: Item Value Expression
+private double _completion_stub_xjal() {
+return
+consumers.NWantToBuy()
+;
+}
 }
